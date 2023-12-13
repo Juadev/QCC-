@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>QCC?</title>
+</head>
+<body>
+    <div id="conteudo">
+<h1>Quer casar comigo?</h1>
+<button onclick="sim()">Sim</button>
+<button id="btn" onmouseover="desvia(this)">Não</button>
+    </div>
+</body>
+<script>
+    function sim(){
+    alert("Arguade pois estar proximo hehehe Eu te amo <3")
+}
+function desvia(t){
+var btn =t;
+btn.style.position='absolute';
+btn.style.top= geraposicao(0,100);
+btn.style.left=geraposicao(0,100);
+}
+function geraposicao(min, max){
+    return (Math.random() * (max - min) + min) + '%';
+}
+</script>
+</html>
